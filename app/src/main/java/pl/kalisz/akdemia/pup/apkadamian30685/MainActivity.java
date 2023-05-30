@@ -130,8 +130,8 @@ public class MainActivity
                 startActivity(nav_18);
                 break;
             case R.id.nav_19:
-                komunikat = "Lab 9.";
-                Toast.makeText(this, komunikat, Toast.LENGTH_LONG).show();
+                Intent nav_19 = new Intent(this, ObiektyInfo.class);
+                startActivity(nav_19);
                 break;
             case R.id.nav_110:
                 komunikat = "Lab 10.";
