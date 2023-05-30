@@ -20,10 +20,16 @@
         tools:targetApi="31">
         <activity
             android:name=".ObiektyLista"
-            android:exported="false" />
+            android:label="@string/obiekty_lista"
+            android:parentActivityName=".ObiektyLista"
+            android:theme="@style/MyAppTheme"
+        />
         <activity
             android:name=".ObiektyInfo"
-            android:exported="false" />
+            android:label="@string/obiekty_info"
+            android:parentActivityName=".ObiektyInfo"
+            android:theme="@style/MyAppTheme"
+        />
         <activity
             android:name=".Konfiguracja"
             android:label="@string/departaments"
