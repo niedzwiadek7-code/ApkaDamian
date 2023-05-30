@@ -4,6 +4,8 @@
 
     <uses-feature android:name="android.hardware.telephony" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
@@ -19,6 +21,13 @@
         android:theme="@style/Theme.ApkaDamian30685"
         tools:targetApi="31">
         <activity
+            android:name=".SprawdzajSiec"
+            android:exported="false"
+            android:label="@string/sprawdzaj_siec"
+            android:parentActivityName=".SprawdzajSiec"
+            android:theme="@style/MyAppTheme"
+        />
+        <activity
             android:name=".BazaDanychDopisz"
             android:exported="false"
             android:label="@string/BazaDanychDopisz"
@@ -30,15 +39,13 @@
             android:exported="false"
             android:label="@string/BazaDanychAktualizacja"
             android:parentActivityName=".BazaDanychAktualizacja"
-            android:theme="@style/MyAppTheme"
-        />
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name=".BazaDanych"
             android:exported="false"
             android:label="@string/title_activity_baza_danych"
             android:parentActivityName=".BazaDanych"
-            android:theme="@style/MyAppTheme"
-        />
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name=".ObiektyLista"
             android:label="@string/obiekty_lista"
@@ -78,6 +85,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name="pl.kalisz.akdemia.pup.apkadamian30685.Usluga" />
     </application>
 
 </manifest>

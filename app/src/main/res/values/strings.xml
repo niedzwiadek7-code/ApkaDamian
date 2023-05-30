@@ -68,6 +68,10 @@
     <string name="BazaDanychDopisz">Baza Danych Dopisz</string>
     <string name="BazaDanychAktualizacja">Baza Danych Aktualizacja</string>
 
+    <string name="sprawdzaj_siec">Sprawdzaj siec</string>
+    <string name="start_serwis">Start usługi</string>
+    <string name="stop_serwis">Stop usługi</string>
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
