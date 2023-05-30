@@ -3,6 +3,7 @@ package pl.kalisz.akdemia.pup.apkadamian30685;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
@@ -61,6 +62,9 @@ public class ObiektyInfoFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (savedInstanceState != null) {
+            obiektId = savedInstanceState.getLong("obiektId");
+        }
     }
 
     @Override
@@ -71,5 +75,10 @@ public class ObiektyInfoFragment extends Fragment {
 
     public void setObiekt (long id) {
         this.obiektId = id;
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        outState.putLong("obiektId", obiektId);
     }
 }
