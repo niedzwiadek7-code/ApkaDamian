@@ -8,7 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class OrganizacjaSQLiteOpenHelper extends SQLiteOpenHelper
 {
     private static final String DB_NAME = "PWSZ";
-    private static final int DB_VERSION = 1;
+//    private static final int DB_VERSION = 1;
+    private static final int DB_VERSION = 2;
 
     OrganizacjaSQLiteOpenHelper (Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -39,6 +40,9 @@ public class OrganizacjaSQLiteOpenHelper extends SQLiteOpenHelper
             wstawOrganizacja(db, "Bulionik", "akademik");
             wstawOrganizacja(db, "Katedra Informatyki", "katedra");
             wstawOrganizacja(db, "Sieć uczelniana", "administrator");
+        }
+        if (oldVersion < 2) {
+            db.execSQL("ALTER TABLE ORGANIZACJA ADD COLUMN TELEFON TEXT");
         }
     }
 }
