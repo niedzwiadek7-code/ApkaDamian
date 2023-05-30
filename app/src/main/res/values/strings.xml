@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Apka Damiana 30685</string>
+    <string name="send"> Wyślij wiadomość </string>
+    <string name="share"> Udostępnij </string>
+    <string name="version"> Wersja SDK </string>
+    <string name="about"> O programie </string>
+
+    <string name="app_imie">Damian Kliber</string>
+    <string name="app_album">Album: 30685</string>
+    <string name="nav_16">Lab 6. Czas życia, sensory </string>
+    <string name="nav_16_b">Lab 6. Uczelnia </string>
+    <string name="nav_17">Lab 7. Widoki, układy </string>
+    <string name="nav_18">Lab 8. RecyclerView </string>
+    <string name="nav_19">Lab 9. Fragmenty </string>
+    <string name="nav_110">Lab 10. Baza danych </string>
+    <string name="nav_111">Lab 11. Usługi </string>
+    <string name="nav_112">Lab 12. Różności </string>
+    <string name="nav_projekt"> Projekt indywidualny </string>
+    <string name="nav_projekt_temat"> Temat </string>
+    <string name="nav_projekt_ikona"> Ikona </string>
+    <string name="nav_open_drawer"> Otwórz szufladę </string>
+    <string name="nav_close_drawer"> Zamknij szufladę </string>
+    <string name="sensors"> Czujniki </string>
+
+    <string name="departaments"> Kierunki </string>
+    <string name="wyswietl_kierunki" translatable="false">Wyświetl kierunki</string>
+    <string name="kierunki" translatable="false">kierunki</string>
+    <string-array name="wydzialy">
+        <item>Politechniczny</item>
+        <item>Lekarski</item>
+        <item>Nauk o zdrowiu</item>
+        <item>Nauk Społecznych</item>
+    </string-array>
+
+    <string name="configuration"> Konfiguracja </string>
+    <string name="write_nick"> Wpisz nick </string>
+    <string name="wybierz_kierunek"> Podaj kierunek </string>
+    <string name="wpisz_email"> Wpisz email </string>
+    <string name="wlacz"> ON </string>
+    <string name="akademik"> Informacje z akademika </string>
+    <string name="uczelnia"> Informacje uczelniane </string>
+    <string name="button"> Akceptuj dane </string>
+    <string name="button_sms"> SMSManager </string>
+    <string name="button_sms_default"> SMS (Default) </string>
+    <string name="mezczyzna"> Mężczyzna </string>
+    <string name="kobieta"> Kobieta </string>
+
+    <string name="obiekty_uczelni"> Obiekty uczelni </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
