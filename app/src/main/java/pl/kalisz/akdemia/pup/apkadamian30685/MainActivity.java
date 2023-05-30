@@ -135,8 +135,8 @@ public class MainActivity
                 startActivity(nav_19);
                 break;
             case R.id.nav_110:
-                komunikat = "Lab 10.";
-                Toast.makeText(this, komunikat, Toast.LENGTH_LONG).show();
+                Intent nav_110 = new Intent(this, BazaDanych.class);
+                startActivity(nav_110);
                 break;
             case R.id.nav_111:
                 komunikat = "Lab 11.";

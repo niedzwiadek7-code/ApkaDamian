@@ -19,17 +19,36 @@
         android:theme="@style/Theme.ApkaDamian30685"
         tools:targetApi="31">
         <activity
+            android:name=".BazaDanychDopisz"
+            android:exported="false"
+            android:label="@string/BazaDanychDopisz"
+            android:parentActivityName=".BazaDanychDopisz"
+            android:theme="@style/MyAppTheme"
+        />
+        <activity
+            android:name=".BazaDanychAktualizacja"
+            android:exported="false"
+            android:label="@string/BazaDanychAktualizacja"
+            android:parentActivityName=".BazaDanychAktualizacja"
+            android:theme="@style/MyAppTheme"
+        />
+        <activity
+            android:name=".BazaDanych"
+            android:exported="false"
+            android:label="@string/title_activity_baza_danych"
+            android:parentActivityName=".BazaDanych"
+            android:theme="@style/MyAppTheme"
+        />
+        <activity
             android:name=".ObiektyLista"
             android:label="@string/obiekty_lista"
             android:parentActivityName=".ObiektyLista"
-            android:theme="@style/MyAppTheme"
-        />
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name=".ObiektyInfo"
             android:label="@string/obiekty_info"
             android:parentActivityName=".ObiektyInfo"
-            android:theme="@style/MyAppTheme"
-        />
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name=".Konfiguracja"
             android:label="@string/departaments"
