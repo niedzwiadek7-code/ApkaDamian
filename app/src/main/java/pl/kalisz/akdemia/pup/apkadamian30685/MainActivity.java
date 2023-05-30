@@ -130,7 +130,8 @@ public class MainActivity
                 startActivity(nav_18);
                 break;
             case R.id.nav_19:
-                Intent nav_19 = new Intent(this, ObiektyInfo.class);
+//                Intent nav_19 = new Intent(this, ObiektyInfo.class);
+                Intent nav_19 = new Intent(this, ObiektyLista.class);
                 startActivity(nav_19);
                 break;
             case R.id.nav_110:
