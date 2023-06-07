@@ -20,20 +20,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApkaDamian30685"
         tools:targetApi="31">
+        <receiver
+            android:name=".Widget30685"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget30685_info" />
+        </receiver>
+
         <activity
             android:name=".SprawdzajSiec"
             android:exported="false"
             android:label="@string/sprawdzaj_siec"
             android:parentActivityName=".SprawdzajSiec"
-            android:theme="@style/MyAppTheme"
-        />
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name=".BazaDanychDopisz"
             android:exported="false"
             android:label="@string/BazaDanychDopisz"
             android:parentActivityName=".BazaDanychDopisz"
-            android:theme="@style/MyAppTheme"
-        />
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name=".BazaDanychAktualizacja"
             android:exported="false"
@@ -86,7 +96,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="pl.kalisz.akdemia.pup.apkadamian30685.Usluga" />
+        <service android:name=".Usluga" />
     </application>
 
 </manifest>
